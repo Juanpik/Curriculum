@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Juan Pablo Cruz Fimbres — Lingüista Computacional, especialista en lenguas indígenas y desarrollador de herramientas lingüísticas." />
+  <title>Juan Pablo Cruz Fimbres · Lingüista Computacional</title>
+
+  <!-- Google Fonts: Fraunces (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light-mode">
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">JPC<span class="accent">.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#investigacion">Investigación</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="dark-mode-toggle" id="darkToggle" aria-label="Cambiar tema">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+
+        <div class="hero-tag reveal">
+          <span class="tag-dot"></span>
+          Lingüística · Tecnología · Lenguas Indígenas
+        </div>
+
+        <h1 class="hero-name reveal reveal-delay-1">
+          Juan Pablo<br />
+          <em>Cruz Fimbres</em>
+        </h1>
+
+        <p class="hero-title reveal reveal-delay-2">
+          Lingüista Computacional &amp; Desarrollador de Herramientas Lingüísticas
+        </p>
+
+        <p class="hero-desc reveal reveal-delay-3">
+          Construyo puentes entre la lingüística de campo, la computación y las lenguas indígenas del norte de México.
+          Docente universitario, investigador y creador de aplicaciones digitales para la documentación y revitalización lingüística.
+        </p>
+
+        <div class="hero-ctas reveal reveal-delay-4">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost">Contactar</a>
+        </div>
+
+        <div class="hero-stats reveal reveal-delay-4">
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Apps lingüísticas</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Lenguas documentadas</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Años docencia universitaria</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="glyph-card">
+          <div class="glyph-header">
+            <span class="glyph-lang">ra·rá·mu·ri</span>
+            <span class="glyph-badge">NLP</span>
+          </div>
+          <div class="glyph-words">
+            <span>wa·ri·jó</span>
+            <span>yá·qui</span>
+            <span>pi·ma</span>
+            <span>gua·ri·jío</span>
+          </div>
+          <div class="code-snippet">
+            <span class="code-comment">// lexical distance matrix</span><br/>
+            <span class="code-key">cognates</span><span class="code-op"> = </span><span class="code-val">taracahita.compare()</span><br/>
+            <span class="code-key">clusters</span><span class="code-op"> = </span><span class="code-val">LexMatrix.run()</span>
+          </div>
+          <div class="glyph-footer">
+            <span class="glyph-tech">Python</span>
+            <span class="glyph-tech">NLTK</span>
+            <span class="glyph-tech">LingPy</span>
+            <span class="glyph-tech">JS</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre-mi" class="scroll-hint" aria-label="Scroll">
+        <i class="ri-arrow-down-line"></i>
+      </a>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SOBRE MÍ
+    ══════════════════════════════════════════ -->
+    <section class="section sobre-mi" id="sobre-mi">
+      <div class="container">
+        <div class="section-label reveal">01 — Sobre mí</div>
+
+        <div class="sobre-grid">
+          <div class="sobre-text reveal">
+            <h2 class="section-title">Lingüista que programa.<br/><em>Programador que escucha.</em></h2>
+            <p>
+              Mi trabajo nace de una pregunta sencilla: ¿cómo puede la tecnología servir a las lenguas que están desapareciendo? Con doctorado en Humanidades por la Universidad de Sonora y años de trabajo de campo con comunidades indígenas del noroeste mexicano, he desarrollado una perspectiva única que combina el rigor académico con la capacidad técnica de construir soluciones digitales reales.
+            </p>
+            <p>
+              Soy docente-investigador en la Escuela de Antropología e Historia del Norte de México (EAHNM), donde imparto desde Lingüística Computacional hasta Biolingüística. Coordino el equipo SEMLE-Chihuahua del Colegio de México y soy miembro activo de la Red de Humanidades y Lingüística Computacional. Mi investigación se centra en la estructura de la información y el seguimiento de referencia en guarijío, una lengua yutoazteca de Chihuahua.
+            </p>
+            <p>
+              Fuera de la academia, fundo y dirijo proyectos de software que ponen el conocimiento lingüístico al alcance de todos: diccionarios interactivos, aplicaciones móviles, herramientas de análisis léxico y plataformas de aprendizaje de lenguas indígenas.
+            </p>
+            <div class="sobre-langs">
+              <div class="lang-pill"><i class="ri-translate-2"></i> Español nativo</div>
+              <div class="lang-pill"><i class="ri-translate-2"></i> Inglés avanzado (7/7)</div>
+              <div class="lang-pill"><i class="ri-translate-2"></i> Ruso intermedio (5/5)</div>
+              <div class="lang-pill"><i class="ri-translate-2"></i> Portugués básico</div>
+            </div>
+          </div>
+
+          <div class="sobre-aside reveal reveal-delay-1">
+            <div class="info-card">
+              <div class="info-card-item">
+                <i class="ri-map-pin-line"></i>
+                <span>Chihuahua, México</span>
+              </div>
+              <div class="info-card-item">
+                <i class="ri-graduation-cap-line"></i>
+                <span>Doctorado en Humanidades (Unison)</span>
+              </div>
+              <div class="info-card-item">
+                <i class="ri-building-line"></i>
+                <span>EAHNM · SEMLE-ColMex · Red HLC</span>
+              </div>
+              <div class="info-card-item">
+                <i class="ri-github-line"></i>
+                <a href="https://juanpik.github.io/" target="_blank" rel="noopener">juanpik.github.io</a>
+              </div>
+              <div class="info-card-item">
+                <i class="ri-mail-line"></i>
+                <a href="mailto:juanpik@gmail.com">juanpik@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="skills-mini">
+              <h4>Stack técnico</h4>
+              <div class="skills-tags">
+                <span>Python</span><span>JavaScript</span><span>Java</span>
+                <span>HTML/CSS</span><span>NLTK</span><span>LingPy</span>
+                <span>FLEX (SIL)</span><span>ELAN</span><span>Android</span>
+                <span>Photoshop</span><span>Illustrator</span><span>InDesign</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         ESPECIALIDADES
+    ══════════════════════════════════════════ -->
+    <section class="section especialidades" id="especialidades">
+      <div class="container">
+        <div class="section-label reveal">02 — Áreas de especialización</div>
+        <h2 class="section-title centered reveal">Donde confluyen<br/><em>lengua y código</em></h2>
+
+        <div class="esp-grid">
+
+          <div class="esp-card reveal">
+            <div class="esp-icon"><i class="ri-cpu-line"></i></div>
+            <h3>Lingüística Computacional</h3>
+            <p>Análisis de corpus, comparación léxica computacional, matrices de cognados, cálculo de distancias entre lenguas y procesamiento de lenguaje natural aplicado a lenguas de baja densidad de recursos.</p>
+            <div class="esp-tools">Python · NLTK · LingPy · LexMatrix</div>
+          </div>
+
+          <div class="esp-card reveal reveal-delay-1">
+            <div class="esp-icon"><i class="ri-book-open-line"></i></div>
+            <h3>Documentación Lingüística</h3>
+            <p>Trabajo de campo con comunidades guarijío, rarámuri, yaqui y pima. Grabación, transcripción, glosado y archivado de datos de lenguas yutoaztecas del norte de México en FLEX y ELAN.</p>
+            <div class="esp-tools">FLEX (SIL) · ELAN · GoldWave</div>
+          </div>
+
+          <div class="esp-card reveal reveal-delay-2">
+            <div class="esp-icon"><i class="ri-smartphone-line"></i></div>
+            <h3>Desarrollo de Software Lingüístico</h3>
+            <p>Diseño y desarrollo de aplicaciones móviles (Android) y web para la enseñanza, consulta y preservación de lenguas indígenas: diccionarios audiovisuales, apps de aprendizaje y herramientas de análisis.</p>
+            <div class="esp-tools">Java · JavaScript · Android · Vercel</div>
+          </div>
+
+          <div class="esp-card reveal reveal-delay-3">
+            <div class="esp-icon"><i class="ri-seedling-line"></i></div>
+            <h3>Revitalización Lingüística</h3>
+            <p>Colaboración con comunidades indígenas y proyectos educativos para el fortalecimiento de la lengua ralámuli. Coordinador del equipo SEMLE-Chihuahua y colaborador del colectivo Cali Rosákame.</p>
+            <div class="esp-tools">SEMLE · ColMex · EAHNM · Cali Rosákame</div>
+          </div>
+
+          <div class="esp-card reveal">
+            <div class="esp-icon"><i class="ri-user-voice-line"></i></div>
+            <h3>Análisis del Discurso</h3>
+            <p>Investigación sobre estructura de la información, tópico, foco y continuidad referencial en guarijío de Chihuahua. Perspectiva tipológica y funcionalista aplicada a lenguas indígenas americanas.</p>
+            <div class="esp-tools">Tipología · Funcionalismo · Guarijío</div>
+          </div>
+
+          <div class="esp-card reveal reveal-delay-1">
+            <div class="esp-icon"><i class="ri-presentation-line"></i></div>
+            <h3>Docencia Universitaria</h3>
+            <p>Diseño e impartición de asignaturas en lingüística computacional, morfosintaxis, biolingüística y modelos lógicos del lenguaje a nivel licenciatura en la EAHNM, con enfoque interdisciplinario.</p>
+            <div class="esp-tools">EAHNM · UNISON · Superprof</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PROYECTOS
+    ══════════════════════════════════════════ -->
+    <section class="section proyectos" id="proyectos">
+      <div class="container">
+        <div class="section-label reveal">03 — Proyectos</div>
+        <h2 class="section-title centered reveal">Herramientas que<br/><em>hablan lenguas</em></h2>
+
+        <div class="proyectos-grid">
+
+          <!-- Rarámuri be'neka -->
+          <article class="proyecto-card featured reveal">
+            <div class="proyecto-header">
+              <div class="proyecto-year">2026</div>
+              <div class="proyecto-tags">
+                <span>Web App</span>
+                <span>Educación</span>
+                <span>Rarámuri</span>
+              </div>
+            </div>
+            <h3>Rarámuri be'neka</h3>
+            <p>Plataforma web interactiva para el aprendizaje de la lengua rarámuri, desarrollada en colaboración con el colectivo Cali Rosákame. Diseñada para comunidades en contexto urbano e instituciones educativas bilingües.</p>
+            <div class="proyecto-tech">
+              <span>JavaScript</span><span>HTML/CSS</span><span>Vercel</span>
+            </div>
+            <a href="https://aprende-raramuri.vercel.app/" target="_blank" rel="noopener" class="proyecto-link">
+              Ver proyecto <i class="ri-external-link-line"></i>
+            </a>
+          </article>
+
+          <!-- Taracahita LexMatrix -->
+          <article class="proyecto-card reveal reveal-delay-1">
+            <div class="proyecto-header">
+              <div class="proyecto-year">2025</div>
+              <div class="proyecto-tags">
+                <span>Tool</span>
+                <span>Lingüística Comp.</span>
+              </div>
+            </div>
+            <h3>Taracahita LexMatrix</h3>
+            <p>Herramienta computacional para identificar conexiones genealógicas y calcular distancias léxicas entre lenguas yutoaztecas del norte. Analiza matrices de cognados y genera visualizaciones de parentesco lingüístico.</p>
+            <div class="proyecto-tech">
+              <span>Python</span><span>LingPy</span><span>NLP</span>
+            </div>
+            <a href="https://docs.google.com/presentation/d/1dzGYZbW7dh6BwLk0zZOucCCB6i6IUAjY9red_ubvilo/edit?usp=sharing" target="_blank" rel="noopener" class="proyecto-link">
+              Ver presentación <i class="ri-external-link-line"></i>
+            </a>
+          </article>
+
+          <!-- Rarámuri Ra'icha -->
+          <article class="proyecto-card reveal reveal-delay-2">
+            <div class="proyecto-header">
+              <div class="proyecto-year">2023</div>
+              <div class="proyecto-tags">
+                <span>Android</span>
+                <span>Diccionario</span>
+              </div>
+            </div>
+            <h3>Rarámuri Ra'icha</h3>
+            <p>Diccionario virtual de verbos de moción de la lengua rarámuri. Aplicación para Android con interfaz intuitiva que permite a hablantes y estudiantes consultar verbos con contextos de uso, ejemplos y audio.</p>
+            <div class="proyecto-tech">
+              <span>Java</span><span>Android</span><span>SQLite</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1MjHJ7byJdB3gVBNjhg5HkBaWa9nCwWlb/view?usp=drive_link" target="_blank" rel="noopener" class="proyecto-link">
+              Descargar app <i class="ri-download-line"></i>
+            </a>
+          </article>
+
+          <!-- Pepenimia Warijó -->
+          <article class="proyecto-card reveal">
+            <div class="proyecto-header">
+              <div class="proyecto-year">2022</div>
+              <div class="proyecto-tags">
+                <span>Android</span>
+                <span>Audiovisual</span>
+              </div>
+            </div>
+            <h3>Pepenimia Warijó</h3>
+            <p>Diccionario audiovisual de la lengua guarijío para Android. Combina texto, imágenes y audio de hablantes nativos para ofrecer una experiencia de consulta léxica inmersiva y accesible para la comunidad.</p>
+            <div class="proyecto-tech">
+              <span>Java</span><span>Android</span><span>Audio</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1bX873VUz07GEQgHNWnXr3qaVc2XYanu_/view?usp=drive_link" target="_blank" rel="noopener" class="proyecto-link">
+              Descargar app <i class="ri-download-line"></i>
+            </a>
+          </article>
+
+          <!-- Diccionario Yaqui -->
+          <article class="proyecto-card reveal reveal-delay-1">
+            <div class="proyecto-header">
+              <div class="proyecto-year">2020</div>
+              <div class="proyecto-tags">
+                <span>Android</span>
+                <span>Play Store</span>
+              </div>
+            </div>
+            <h3>Diccionario Yaqui</h3>
+            <p>Primera aplicación móvil de consulta léxica yaqui disponible en Google Play Store. Permite búsqueda bidireccional español–yaqui con ejemplos de uso, desarrollada en colaboración con la Universidad de Sonora.</p>
+            <div class="proyecto-tech">
+              <span>Java</span><span>Android</span><span>Google Play</span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.unison.yaqui.dic" target="_blank" rel="noopener" class="proyecto-link">
+              Ver en Play Store <i class="ri-google-play-line"></i>
+            </a>
+          </article>
+
+          <!-- Bímori -->
+          <article class="proyecto-card reveal reveal-delay-2">
+            <div class="proyecto-header">
+              <div class="proyecto-year">En curso</div>
+              <div class="proyecto-tags">
+                <span>Startup</span>
+                <span>EdTech</span>
+              </div>
+            </div>
+            <h3>Bímori</h3>
+            <p>Empresa de desarrollo de software y herramientas digitales enfocadas en la enseñanza y preservación de lenguas indígenas. Un proyecto de largo aliento para digitalizar el patrimonio lingüístico del noroeste mexicano.</p>
+            <div class="proyecto-tech">
+              <span>Web</span><span>Android</span><span>NLP</span>
+            </div>
+            <span class="proyecto-link muted">Próximamente</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         EXPERIENCIA
+    ══════════════════════════════════════════ -->
+    <section class="section experiencia" id="experiencia">
+      <div class="container">
+        <div class="section-label reveal">04 — Experiencia profesional</div>
+        <h2 class="section-title reveal">Trayectoria</h2>
+
+        <div class="exp-layout">
+
+          <!-- DOCENCIA E INVESTIGACIÓN -->
+          <div class="exp-col reveal">
+            <h3 class="exp-col-title"><i class="ri-school-line"></i> Docencia e Investigación</h3>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">2022 – Presente</span>
+                <span class="exp-badge academia">Academia</span>
+              </div>
+              <h4>Docente Investigador</h4>
+              <p class="exp-org">Escuela de Antropología e Historia del Norte de México (EAHNM)</p>
+              <ul class="exp-details">
+                <li>Estructuras Lingüísticas, Lingüística Computacional, Biolingüística</li>
+                <li>Diseño y Técnicas de Investigación II</li>
+                <li>Proyecto de Investigación Formativa: Lenguaje e Interculturalidad</li>
+                <li>Modelos Lógicos del Lenguaje</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">2025 – Presente</span>
+                <span class="exp-badge red">Red HLC</span>
+              </div>
+              <h4>Miembro Activo – Nodo Chihuahua</h4>
+              <p class="exp-org">Red de Humanidades y Lingüística Computacional</p>
+              <ul class="exp-details">
+                <li>Representante de la EAHNM en proyectos interdisciplinarios</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">2024 – Presente</span>
+                <span class="exp-badge colmex">ColMex</span>
+              </div>
+              <h4>Coordinador SEMLE-Chihuahua</h4>
+              <p class="exp-org">Seminario de Estudios sobre Lenguas, El Colegio de México</p>
+              <ul class="exp-details">
+                <li>Colaboración con equipo de revitalización lingüística Cali Rosákame</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">2020</span>
+                <span class="exp-badge academia">Instructor</span>
+              </div>
+              <h4>Instructor</h4>
+              <p class="exp-org">Universidad de Sonora</p>
+              <ul class="exp-details">
+                <li>Curso: Enfoques metodológicos en la investigación lingüística</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">2024 – Presente</span>
+                <span class="exp-badge tech">Asesorías</span>
+              </div>
+              <h4>Tutor / Asesor</h4>
+              <p class="exp-org">Superprof</p>
+              <ul class="exp-details">
+                <li>Lingüística computacional, modelos lógicos del lenguaje, morfosintaxis</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- TECNOLOGÍA Y EMPRENDIMIENTO -->
+          <div class="exp-col reveal reveal-delay-1">
+            <h3 class="exp-col-title"><i class="ri-code-box-line"></i> Tecnología y Emprendimiento</h3>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">Fundador</span>
+                <span class="exp-badge tech">EdTech</span>
+              </div>
+              <h4>Fundador</h4>
+              <p class="exp-org">Bímori</p>
+              <ul class="exp-details">
+                <li>Software y herramientas digitales para enseñanza y preservación de lenguas indígenas</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">Fundador</span>
+                <span class="exp-badge">Redacción</span>
+              </div>
+              <h4>Fundador</h4>
+              <p class="exp-org">RedaText</p>
+              <ul class="exp-details">
+                <li>Plataforma de corrección de estilo, edición y redacción de textos académicos y profesionales</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">Fundador</span>
+                <span class="exp-badge">F&amp;B</span>
+              </div>
+              <h4>Fundador y Administrador</h4>
+              <p class="exp-org">Dumplin' Bros!</p>
+              <ul class="exp-details">
+                <li>Gestión administrativa, costos, márgenes y marketing digital integral</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">2021</span>
+                <span class="exp-badge">Diseño</span>
+              </div>
+              <h4>Diseñador Gráfico / Community Manager</h4>
+              <p class="exp-org">CITEL</p>
+              <ul class="exp-details">
+                <li>Publicidad y mantenimiento de redes sociales</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">2017</span>
+                <span class="exp-badge">Clínico</span>
+              </div>
+              <h4>Asistente de Terapia del Lenguaje</h4>
+              <p class="exp-org">CREE</p>
+              <ul class="exp-details">
+                <li>Terapia con niños; material didáctico para adultos con trastornos del lenguaje</li>
+              </ul>
+            </div>
+
+            <div class="exp-item">
+              <div class="exp-meta">
+                <span class="exp-year">2014 – 2016</span>
+                <span class="exp-badge">BPO</span>
+              </div>
+              <h4>Agente de Ventas Bilingüe</h4>
+              <p class="exp-org">Teleperformance – Campaña COMCAST</p>
+              <ul class="exp-details">
+                <li>Atención y ventas en inglés para mercado estadounidense</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         INVESTIGACIÓN Y PUBLICACIONES
+    ══════════════════════════════════════════ -->
+    <section class="section investigacion" id="investigacion">
+      <div class="container">
+        <div class="section-label reveal">05 — Investigación y Publicaciones</div>
+        <h2 class="section-title reveal">Conocimiento que<br/><em>deja huella</em></h2>
+
+        <div class="inv-layout">
+
+          <!-- PUBLICACIONES -->
+          <div class="reveal">
+            <h3 class="inv-subtitle"><i class="ri-article-line"></i> Publicaciones</h3>
+            <div class="pub-list">
+
+              <div class="pub-item">
+                <span class="pub-year">2026</span>
+                <div class="pub-info">
+                  <p class="pub-title">Un oasis en medio de la ciudad: los retos de la primaria indígena Calí Rosákame</p>
+                  <p class="pub-meta">Hernández Cruz, A., <strong>Cruz Fimbres, J. P.</strong>, et al. — <em>El libro de las contradicciones</em>, SEMLE, Colegio de México. (En prensa)</p>
+                </div>
+              </div>
+
+              <div class="pub-item">
+                <span class="pub-year">2023</span>
+                <div class="pub-info">
+                  <p class="pub-title">Continuidad referencial en guarijío de Chihuahua</p>
+                  <p class="pub-meta">Cruz, J. &amp; Peregrina, M. — <em>Cuadernos de Lingüística</em>, El Colegio de México</p>
+                </div>
+              </div>
+
+              <div class="pub-item">
+                <span class="pub-year">2022</span>
+                <div class="pub-info">
+                  <p class="pub-title">Presentación en Expedicionario. Revista de estudios en Antropología</p>
+                  <p class="pub-meta">Cruz, J. — Año 2, Núm. 4. INAH · <a href="https://revistas.inah.gob.mx/index.php/expedicionario/article/view/18846" target="_blank" rel="noopener">Ver artículo ↗</a></p>
+                </div>
+              </div>
+
+              <div class="pub-item">
+                <span class="pub-year">2015</span>
+                <div class="pub-info">
+                  <p class="pub-title">Origen del lenguaje: un recuento evolutivo</p>
+                  <p class="pub-meta">Cruz, J. P. — Revista <em>[pro:krastina:re]</em>, Núm. I. Licenciatura en Lingüística, Unison</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PONENCIAS SELECCIONADAS -->
+          <div class="reveal reveal-delay-1">
+            <h3 class="inv-subtitle"><i class="ri-mic-line"></i> Ponencias seleccionadas</h3>
+            <div class="ponencias-list">
+
+              <div class="ponencia-item">
+                <span class="pon-year">2025</span>
+                <div>
+                  <p class="pon-title">Innovación tecnológica y diversidad lingüística: un reto para la inclusión</p>
+                  <p class="pon-venue">II Foro de Diversidad Lingüística y Cultural, PIAI · Sisoguichi, Chih.</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2025</span>
+                <div>
+                  <p class="pon-title">La labor docente frente a la precarización: el caso de lingüística antropológica en la EAHNM</p>
+                  <p class="pon-venue">VII Congreso Nacional de Investigadores del INAH · Chihuahua, Chih.</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2024</span>
+                <div>
+                  <p class="pon-title">Métodos computacionales para la comparación léxica de lenguas taracahítas</p>
+                  <p class="pon-venue">Coloquio de Investigación Lingüística 2024-2 · Universidad de Sonora</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2023</span>
+                <div>
+                  <p class="pon-title">Pepenimia warijó. Una app audiovisual en warijó</p>
+                  <p class="pon-venue">Congreso AMLA 2023 · Chihuahua, Chih. (coautor: S. R. Moreno Soberanes)</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2021</span>
+                <div>
+                  <p class="pon-title">Tópico y foco en guarijío de Chihuahua</p>
+                  <p class="pon-venue">Coloquio de investigación lingüística · Universidad de Sonora</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2020</span>
+                <div>
+                  <p class="pon-title">La interrelación en guarijío de posposiciones, marcas de caso y orden de palabra</p>
+                  <p class="pon-venue">Seminario de diacronía y adposiciones · Universidad de Sonora</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2019</span>
+                <div>
+                  <p class="pon-title">Continuidad del tópico en guarijío de Chihuahua</p>
+                  <p class="pon-venue">V Congreso ACAL · Universidad Nacional de Costa Rica</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2019</span>
+                <div>
+                  <p class="pon-title">Estrategias de focalización en guarijío de Chihuahua</p>
+                  <p class="pon-venue">Coloquio de investigación lingüística · Universidad de Sonora</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2018</span>
+                <div>
+                  <p class="pon-title">Seguimiento de referencia en guarijío de Chihuahua</p>
+                  <p class="pon-venue">XII Coloquio de Lingüística de la ENAH · Ciudad de México</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2017</span>
+                <div>
+                  <p class="pon-title">Densidad referencial en pima bajo</p>
+                  <p class="pon-venue">III Jornada de Lingüística · Universidad de Querétaro</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2017</span>
+                <div>
+                  <p class="pon-title">Mecanismos de referencia en guarijío de Chihuahua</p>
+                  <p class="pon-venue">Coloquio de investigación lingüística · Universidad de Sonora</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2017</span>
+                <div>
+                  <p class="pon-title">Lenguaje y lógica en "Alicia en el país de las maravillas"</p>
+                  <p class="pon-venue">XIII Foro de Estudiantes de Lingüística · Universidad de Sonora</p>
+                </div>
+              </div>
+
+              <div class="ponencia-item">
+                <span class="pon-year">2015</span>
+                <div>
+                  <p class="pon-title">Origen y usos del verbo chingar</p>
+                  <p class="pon-venue">XII Foro Internacional de Estudiantes de Lingüística · Universidad de Sonora</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FORMACIÓN ACADÉMICA -->
+        <div class="formacion reveal">
+          <h3 class="inv-subtitle"><i class="ri-graduation-cap-line"></i> Formación Académica</h3>
+          <div class="formacion-grid">
+            <div class="formacion-item">
+              <span class="form-year">2018 – 2022</span>
+              <div>
+                <p class="form-title">Doctorado en Humanidades</p>
+                <p class="form-sub">Universidad de Sonora · <em>Tesis: Estructura de la Información en guarijío de Chihuahua</em></p>
+              </div>
+            </div>
+            <div class="formacion-item">
+              <span class="form-year">2016 – 2018</span>
+              <div>
+                <p class="form-title">Maestría en Lingüística</p>
+                <p class="form-sub">Universidad de Sonora · <em>Tesis: Seguimiento de referencia en guarijío de Chihuahua</em></p>
+              </div>
+            </div>
+            <div class="formacion-item">
+              <span class="form-year">2011 – 2015</span>
+              <div>
+                <p class="form-title">Licenciatura en Lingüística</p>
+                <p class="form-sub">Universidad de Sonora · <em>Tesis: Frecuencia relativa de nombres y verbos en pima bajo</em></p>
+              </div>
+            </div>
+            <div class="formacion-item">
+              <span class="form-year">2016 – 2017</span>
+              <div>
+                <p class="form-title">Ingeniería en Administración Computacional (trunca)</p>
+                <p class="form-sub">Universidad Tec Milenio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EDICIÓN Y COMITÉS -->
+        <div class="comites reveal">
+          <h3 class="inv-subtitle"><i class="ri-award-line"></i> Edición, Evaluación y Comités</h3>
+          <div class="comites-list">
+            <div class="comite-item">
+              <span class="com-year">2025</span>
+              <p>Sinodal Suplente — Tesis de Lic. en Lingüística Antropológica: <em>Intérpretes, glotofagia y dinámicas lingüísticas en la Nueva Vizcaya</em>. EAHNM.</p>
+            </div>
+            <div class="comite-item">
+              <span class="com-year">2024</span>
+              <p>Sinodal Titular — Tesis de Lic. en Lingüística Antropológica: <em>El proceso de resurgimiento de la nación n'de (apache)</em>. EAHNM.</p>
+            </div>
+            <div class="comite-item">
+              <span class="com-year">2024</span>
+              <p>Comentarista de Mesa — XI Encuentro de Proyectos de Investigación Formativa (PIF). EAHNM.</p>
+            </div>
+            <div class="comite-item">
+              <span class="com-year">2022</span>
+              <p>Coordinador de Edición — <em>Expedicionario</em>, Revista de estudios en Antropología, Núm. 4, Año 2.</p>
+            </div>
+            <div class="comite-item">
+              <span class="com-year">2015</span>
+              <p>Diseño Editorial — Revista académica <em>[pro:krastina:re]</em>, Núm. I y II. Licenciatura en Lingüística, Unison.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TALLERES IMPARTIDOS -->
+        <div class="talleres reveal">
+          <h3 class="inv-subtitle"><i class="ri-tools-line"></i> Talleres Impartidos</h3>
+          <div class="talleres-list">
+            <div class="taller-item">
+              <span class="tall-year">2025</span>
+              <div>
+                <p class="tall-title">El Lenguaje: biología, origen y evolución</p>
+                <p class="tall-meta">EAHNM · Marzo 2025</p>
+              </div>
+            </div>
+            <div class="taller-item">
+              <span class="tall-year">2025</span>
+              <div>
+                <p class="tall-title">1er Workshop: Introducción a Lingüística Computacional y Datos</p>
+                <p class="tall-meta">IIMAS-UNAM, UABC, Lab L52+ · Presencial · 26 hrs · Abril 2025</p>
+              </div>
+            </div>
+            <div class="taller-item">
+              <span class="tall-year">2024</span>
+              <div>
+                <p class="tall-title">Las palabras como ventanas: conozcamos las lenguas indígenas jugando</p>
+                <p class="tall-meta">Feria del Libro Chihuahua edición Bicentenario · EAHNM · Noviembre 2024</p>
+              </div>
+            </div>
+            <div class="taller-item">
+              <span class="tall-year">2023</span>
+              <div>
+                <p class="tall-title">Métodos y herramientas computacionales para el análisis de corpus</p>
+                <p class="tall-meta">Maestría en Lingüística, Unison · Semestre 2023-2 · 15 hrs</p>
+              </div>
+            </div>
+            <div class="taller-item">
+              <span class="tall-year">2020</span>
+              <div>
+                <p class="tall-title">Documentación lingüística en FLEX y ELAN</p>
+                <p class="tall-meta">Enfoques Metodológicos 2020-1, Lic. en Lingüística, Unison</p>
+              </div>
+            </div>
+            <div class="taller-item">
+              <span class="tall-year">2017</span>
+              <div>
+                <p class="tall-title">Manejo de equipo especializado para la documentación lingüística</p>
+                <p class="tall-meta">Estancia de Verano de la Investigación Científica · Unison · Jun–Ago 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SERVICIOS
+    ══════════════════════════════════════════ -->
+    <section class="section servicios" id="servicios">
+      <div class="container">
+        <div class="section-label reveal">06 — Servicios</div>
+        <h2 class="section-title centered reveal">¿En qué puedo<br/><em>ayudarte?</em></h2>
+
+        <div class="srv-grid">
+
+          <div class="srv-card reveal">
+            <div class="srv-num">01</div>
+            <i class="ri-code-s-slash-line srv-icon"></i>
+            <h3>Desarrollo de Herramientas Lingüísticas</h3>
+            <p>Creación de aplicaciones móviles (Android) y web para documentación, consulta y aprendizaje de lenguas: diccionarios interactivos, corpus anotados, plataformas de aprendizaje.</p>
+          </div>
+
+          <div class="srv-card reveal reveal-delay-1">
+            <div class="srv-num">02</div>
+            <i class="ri-bar-chart-grouped-line srv-icon"></i>
+            <h3>Análisis Lingüístico Computacional</h3>
+            <p>Análisis de corpus con Python, NLTK y LingPy. Comparación léxica y genealógica de lenguas. Extracción de patrones morfosintácticos y estadísticos en datos de lengua natural.</p>
+          </div>
+
+          <div class="srv-card reveal reveal-delay-2">
+            <div class="srv-num">03</div>
+            <i class="ri-compass-discover-line srv-icon"></i>
+            <h3>Documentación de Lenguas Indígenas</h3>
+            <p>Trabajo de campo, grabación, transcripción y glosado de lenguas indígenas. Elaboración de materiales en FLEX y ELAN. Asesoría en proyectos de documentación y archivado.</p>
+          </div>
+
+          <div class="srv-card reveal">
+            <div class="srv-num">04</div>
+            <i class="ri-user-settings-line srv-icon"></i>
+            <h3>Consultoría Académica y Docente</h3>
+            <p>Diseño de programas de estudio, seminarios y cursos en lingüística, lingüística computacional, análisis del discurso, tipología y revitalización de lenguas a nivel licenciatura y posgrado.</p>
+          </div>
+
+          <div class="srv-card reveal reveal-delay-1">
+            <div class="srv-num">05</div>
+            <i class="ri-edit-line srv-icon"></i>
+            <h3>Corrección y Edición de Textos</h3>
+            <p>Corrección de estilo, edición académica y redacción de textos especializados: artículos, tesis, reportes técnicos y materiales divulgativos. Servicio ofrecido a través de RedaText.</p>
+          </div>
+
+          <div class="srv-card reveal reveal-delay-2">
+            <div class="srv-num">06</div>
+            <i class="ri-global-line srv-icon"></i>
+            <h3>Asesorías y Cursos en Línea</h3>
+            <p>Clases personalizadas en lingüística computacional, morfosintaxis, modelos lógicos del lenguaje y análisis de datos lingüísticos para estudiantes de licenciatura, maestría y profesionales.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════ -->
+    <section class="section contacto" id="contacto">
+      <div class="container">
+        <div class="section-label reveal">07 — Contacto</div>
+        <h2 class="section-title centered reveal">Hablemos de<br/><em>tu proyecto</em></h2>
+        <p class="contacto-desc reveal">¿Tienes un proyecto de lenguas indígenas, necesitas asesoría lingüística o quieres explorar una colaboración? Escríbeme.</p>
+
+        <div class="contacto-grid">
+
+          <div class="contacto-info reveal">
+            <div class="contacto-item">
+              <div class="contacto-icon"><i class="ri-mail-send-line"></i></div>
+              <div>
+                <span class="contacto-label">Correo electrónico</span>
+                <a href="mailto:juanpik@gmail.com" class="contacto-value">juanpik@gmail.com</a>
+              </div>
+            </div>
+            <div class="contacto-item">
+              <div class="contacto-icon"><i class="ri-phone-line"></i></div>
+              <div>
+                <span class="contacto-label">Teléfono</span>
+                <a href="tel:+526622010460" class="contacto-value">662 201 0460</a>
+              </div>
+            </div>
+            <div class="contacto-item">
+              <div class="contacto-icon"><i class="ri-map-pin-2-line"></i></div>
+              <div>
+                <span class="contacto-label">Ubicación</span>
+                <span class="contacto-value">Chihuahua, México</span>
+              </div>
+            </div>
+            <div class="contacto-item">
+              <div class="contacto-icon"><i class="ri-github-line"></i></div>
+              <div>
+                <span class="contacto-label">GitHub Pages</span>
+                <a href="https://juanpik.github.io/" target="_blank" rel="noopener" class="contacto-value">juanpik.github.io</a>
+              </div>
+            </div>
+            <div class="contacto-item">
+              <div class="contacto-icon"><i class="ri-facebook-circle-line"></i></div>
+              <div>
+                <span class="contacto-label">RedaText</span>
+                <a href="https://facebook.com/redatextCE" target="_blank" rel="noopener" class="contacto-value">facebook.com/redatextCE</a>
+              </div>
+            </div>
+            <div class="contacto-item">
+              <div class="contacto-icon"><i class="ri-instagram-line"></i></div>
+              <div>
+                <span class="contacto-label">Dumplin' Bros!</span>
+                <a href="https://instagram.com/dumplinbros/" target="_blank" rel="noopener" class="contacto-value">@dumplinbros</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contacto-form reveal reveal-delay-1" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto">
+                <option value="">— Selecciona un tema —</option>
+                <option>Desarrollo de herramienta lingüística</option>
+                <option>Consultoría lingüística</option>
+                <option>Asesoría académica</option>
+                <option>Corrección de textos</option>
+                <option>Colaboración en investigación</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto o consulta…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              Enviar mensaje <i class="ri-send-plane-line"></i>
+            </button>
+            <p class="form-note">* Este formulario abre tu cliente de correo o puedes escribir directamente a <a href="mailto:juanpik@gmail.com">juanpik@gmail.com</a></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="footer-logo">JPC<span class="accent">.</span></span>
+          <p>Lingüista Computacional · Desarrollador · Docente-Investigador</p>
+        </div>
+        <div class="footer-right">
+          <p>© 2026 Juan Pablo Cruz Fimbres</p>
+          <p>Chihuahua, México</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
