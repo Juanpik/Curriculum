@@ -1201,10 +1201,16 @@ a.contacto-value:hover { color: var(--accent); }
 }
 
 /* ─── SCROLL REVEAL ANIMATIONS ──────────────────────── */
+/* Elements are visible by default — JS enhances with animation */
 .reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+/* JS adds .js-ready to <body> before applying hidden state */
+body.js-ready .reveal:not(.visible) {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
 }
 .reveal.visible {
   opacity: 1;
