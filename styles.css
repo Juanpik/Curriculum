@@ -1176,41 +1176,11 @@ a.contacto-value:hover { color: var(--accent); }
 /* ─── ACCENT ────────────────────────────────────────── */
 .accent { color: var(--accent); }
 
-
-/* ─── AVATAR FOTO ───────────────────────────────────── */
-.sobre-avatar {
-  display: inline-block;
-  margin-bottom: 1.8rem;
-}
-
-.avatar-img {
-  width: 115px;
-  height: 115px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  border: 3px solid var(--accent);
-  box-shadow: 0 0 0 5px var(--accent-light), var(--shadow);
-  display: block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.avatar-img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 0 6px var(--accent-light), var(--shadow-lg);
-}
-
 /* ─── SCROLL REVEAL ANIMATIONS ──────────────────────── */
-/* Elements are visible by default — JS enhances with animation */
 .reveal {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.65s ease, transform 0.65s ease;
-}
-/* JS adds .js-ready to <body> before applying hidden state */
-body.js-ready .reveal:not(.visible) {
   opacity: 0;
   transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
 }
 .reveal.visible {
   opacity: 1;
