@@ -6,6 +6,15 @@
 
 'use strict';
 
+/* ─── HERO IMMEDIATE REVEAL ────────────────────────── */
+// Hero elements are visible on load — show them right away
+// without waiting for scroll, using staggered CSS delays
+document.querySelectorAll('.hero .reveal, .hero-visual .reveal').forEach(el => {
+  // Small timeout so CSS transition plays on load
+  setTimeout(() => el.classList.add('visible'), 80);
+});
+
+
 /* ─── DARK MODE TOGGLE ─────────────────────────────── */
 const darkToggle  = document.getElementById('darkToggle');
 const themeIcon   = document.getElementById('themeIcon');
