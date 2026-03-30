@@ -1259,26 +1259,19 @@ a.contacto-value:hover { color: var(--accent); }
 
 
 /* ─── HERO AVATAR (beside name) ────────────────────── */
-.hero-name-wrap {
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  margin-bottom: 1rem;
+.hero-avatar-wrap {
+  margin-bottom: 1.2rem;
 }
 
 .hero-avatar {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 12%;
   border: 3px solid var(--accent);
   box-shadow: 0 0 0 5px var(--accent-light);
-  flex-shrink: 0;
-}
-
-.hero-name-wrap .hero-name {
-  margin-bottom: 0;
+  display: block;
 }
 
 /* ─── SCROLL REVEAL ANIMATIONS ──────────────────────── */
@@ -1457,13 +1450,13 @@ body.js-ready .reveal:not(.visible) {
           Lingüística · Tecnología · Lenguas Indígenas
         </div>
 
-        <div class="hero-name-wrap reveal reveal-delay-1">
+        <div class="hero-avatar-wrap reveal reveal-delay-1">
           <img src="foto-panel.png" alt="Juan Pablo Cruz Fimbres" class="hero-avatar" />
-          <h1 class="hero-name">
-            Juan Pablo<br />
-            <em>Cruz Fimbres</em>
-          </h1>
         </div>
+        <h1 class="hero-name reveal reveal-delay-2">
+          Juan Pablo<br />
+          <em>Cruz Fimbres</em>
+        </h1>
 
         <p class="hero-title reveal reveal-delay-2">
           Lingüista Computacional &amp; Desarrollador de Herramientas Lingüísticas
