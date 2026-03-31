@@ -1275,20 +1275,26 @@ a.contacto-value:hover { color: var(--accent); }
 }
 
 
-/* ─── SOBRE MÍ FOTO ─────────────────────────────────── */
-.sobre-left {
-  display: flex;
-  flex-direction: column;
+
+
+
+/* ─── HERO AVATAR ───────────────────────────────────── */
+.hero-avatar-wrap {
+  margin-bottom: 1.4rem;
+  display: block;
+  text-align: left;
 }
 
-.sobre-foto-wrap {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+@media (max-width: 1024px) {
+  .hero-avatar-wrap {
+    text-align: center;
+  }
+  .hero-avatar {
+    margin: 0 auto;
+  }
 }
 
-.sobre-foto {
+.hero-avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -1296,20 +1302,7 @@ a.contacto-value:hover { color: var(--accent); }
   object-position: center 15%;
   border: 3px solid var(--accent);
   box-shadow: 0 0 0 5px var(--accent-light);
-  flex-shrink: 0;
-}
-
-.sobre-foto-wrap::after {
-  content: 'Juan Pablo Cruz Fimbres';
-  font-family: 'DM Mono', monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  color: var(--text-faint);
-  text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-  .sobre-foto { width: 80px; height: 80px; }
+  display: block;
 }
 
 /* ─── SCROLL REVEAL ANIMATIONS ──────────────────────── */
@@ -1482,12 +1475,9 @@ body.js-ready .reveal:not(.visible) {
     <section class="hero" id="inicio">
       <div class="hero-bg-grid"></div>
       <div class="hero-content">
-
-        <div class="hero-tag reveal">
-          <span class="tag-dot"></span>
-          Lingüística · Tecnología · Lenguas Indígenas
+        <div class="hero-avatar-wrap reveal">
+          <img src="foto-panel.png" alt="Juan Pablo Cruz Fimbres" class="hero-avatar" />
         </div>
-
         <h1 class="hero-name reveal reveal-delay-1">
           Juan Pablo<br />
           <em>Cruz Fimbres</em>
@@ -1566,9 +1556,6 @@ body.js-ready .reveal:not(.visible) {
 
         <div class="sobre-grid">
           <div class="sobre-left">
-            <div class="sobre-foto-wrap reveal">
-              <img src="foto-panel.png" alt="Juan Pablo Cruz Fimbres" class="sobre-foto" />
-            </div>
             <div class="sobre-text reveal reveal-delay-1">
             <h2 class="section-title">Lingüista que programa.<br/><em>Programador que escucha.</em></h2>
             <p>
